@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package syumai.connect_examples.multiple_serivces.b;
+
+option go_package = "github.com/syumai/connect-examples/multiple-services/api/gen/proto/b";
+
+service BService {
+  rpc BMethod(BRequest) returns (BResponse) {}
+}
+
+message BRequest {}
+message BResponse {
+  string msg = 1;
+}
