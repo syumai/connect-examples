@@ -9,7 +9,7 @@ import { B } from "./B";
 
 const queryClient = new QueryClient();
 const transport = createConnectTransport({
-  baseUrl: import.meta.env.VITE_API_BASE_URL || "http://localhost:9999",
+  baseUrl: import.meta.env.VITE_API_BASE_URL || "http://localhost:8080",
 });
 
 const App: FC = () => (
